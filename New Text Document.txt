@@ -1,0 +1,801 @@
+الحمد لله
+
+اشتغل
+
+ف كودسبيس جيثهوب
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+👋 Welcome to Codespaces! You are on our default image. 
+   - It includes runtimes and tools for Python, Node.js, Docker, and more. See the full list here: https://aka.ms/ghcs-default-image
+   - Want to use a custom image instead? Learn more here: https://aka.ms/configure-codespace
+
+🔍 To explore VS Code to its fullest, search using the Command Palette (Cmd/Ctrl + Shift + P or F1).
+
+📝 Edit away, run your app as usual, and we'll automatically make it available for you to access.
+
+@werruww ➜ /workspaces/aichat (main) $ cargo install aichat
+bash: cargo: command not found
+@werruww ➜ /workspaces/aichat (main) $ cargo install aichat
+bash: cargo: command not found
+@werruww ➜ /workspaces/aichat (main) $ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+info: downloading installer
+info: profile set to 'default'
+info: default host triple is x86_64-unknown-linux-gnu
+info: syncing channel updates for 'stable-x86_64-unknown-linux-gnu'
+info: latest update on 2025-04-03, rust version 1.86.0 (05f9846f8 2025-03-31)
+info: downloading component 'cargo'
+info: downloading component 'clippy'
+info: downloading component 'rust-docs'
+info: downloading component 'rust-std'
+info: downloading component 'rustc'
+info: downloading component 'rustfmt'
+info: installing component 'cargo'
+info: installing component 'clippy'
+info: installing component 'rust-docs'
+ 21.2 MiB /  21.2 MiB (100 %)   8.1 MiB/s in  2s         
+info: installing component 'rust-std'
+ 27.1 MiB /  27.1 MiB (100 %)  15.3 MiB/s in  1s         
+info: installing component 'rustc'
+ 72.8 MiB /  72.8 MiB (100 %)  16.3 MiB/s in  6s         
+info: installing component 'rustfmt'
+info: default toolchain set to 'stable-x86_64-unknown-linux-gnu'
+
+  stable-x86_64-unknown-linux-gnu installed - rustc 1.86.0 (05f9846f8 2025-03-31)
+
+
+Rust is installed now. Great!
+
+To get started you may need to restart your current shell.
+This would reload your PATH environment variable to include
+Cargo's bin directory ($HOME/.cargo/bin).
+
+To configure your current shell, you need to source
+the corresponding env file under $HOME/.cargo.
+
+This is usually done by running one of the following (note the leading DOT):
+. "$HOME/.cargo/env"            # For sh/bash/zsh/ash/dash/pdksh
+source "$HOME/.cargo/env.fish"  # For fish
+source $"($nu.home-path)/.cargo/env.nu"  # For nushell
+@werruww ➜ /workspaces/aichat (main) $ import os
+bash: import: command not found
+"@werruww ➜ /workspaces/aichat (main) $ os.environ['PATH'] += ":/root/.cargo/bin"
+bash: os.environ[PATH]: command not found
+@werruww ➜ /workspaces/aichat (main) $ cargo --version
+bash: cargo: command not found
+@werruww ➜ /workspaces/aichat (main) $ . "$HOME/.cargo/env"
+@werruww ➜ /workspaces/aichat (main) $ echo $PATH
+/home/codespace/.cargo/bin:/usr/local/rvm/gems/ruby-3.3.4/bin:/usr/local/rvm/gems/ruby-3.3.4@global/bin:/usr/local/rvm/rubies/ruby-3.3.4/bin:/vscode/bin/linux-x64/17baf841131aa23349f217ca7c570c76ee87b957/bin/remote-cli:/home/codespace/.local/bin:/home/codespace/.dotnet:/home/codespace/nvm/current/bin:/home/codespace/.php/current/bin:/home/codespace/.python/current/bin:/home/codespace/java/current/bin:/home/codespace/.ruby/current/bin:/home/codespace/.local/bin:/usr/local/python/current/bin:/usr/local/py-utils/bin:/usr/local/jupyter:/usr/local/oryx:/usr/local/go/bin:/go/bin:/usr/local/sdkman/bin:/usr/local/sdkman/candidates/java/current/bin:/usr/local/sdkman/candidates/gradle/current/bin:/usr/local/sdkman/candidates/maven/current/bin:/usr/local/sdkman/candidates/ant/current/bin:/usr/local/rvm/gems/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/share/rbenv/bin:/usr/local/php/current/bin:/opt/conda/bin:/usr/local/nvs:/usr/local/share/nvm/versions/node/v20.19.0/bin:/usr/local/hugo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/dotnet:/home/codespace/.dotnet/tools:/usr/local/rvm/bin
+@werruww ➜ /workspaces/aichat (main) $ cargo --version
+cargo 1.86.0 (adf9b6ad1 2025-02-28)
+@werruww ➜ /workspaces/aichat (main) $ cargo install aichat
+    Updating crates.io index
+  Downloaded aichat v0.29.0
+  Downloaded 1 crate (997.2 KB) in 1.46s
+  Installing aichat v0.29.0
+    Updating crates.io index
+     Locking 456 packages to latest compatible versions
+      Adding bincode v1.3.3 (available: v2.0.1)
+      Adding crossterm v0.28.1 (available: v0.29.0)
+      Adding reedline v0.39.0 (available: v0.40.0)
+  Downloaded anstyle-parse v0.2.6
+  Downloaded bit-vec v0.8.0
+  Downloaded fxhash v0.2.1
+  Downloaded getrandom v0.2.16
+  Downloaded http-body v1.0.1
+  Downloaded http-body-util v0.1.3
+  Downloaded json-patch v4.0.0
+  Downloaded num-traits v0.2.19
+  Downloaded precomputed-hash v0.1.1
+  Downloaded unicode-linebreak v0.1.5
+  Downloaded unicase v2.8.1
+  Downloaded unsafe-libyaml v0.2.11
+  Downloaded untrusted v0.9.0
+  Downloaded rayon v1.10.0
+  Downloaded tokio-util v0.7.15
+  Downloaded plist v1.7.1
+  Downloaded quinn v0.11.7
+  Downloaded regex v1.11.1
+  Downloaded unicode-segmentation v1.12.0
+  Downloaded syn v2.0.101
+  Downloaded quick-xml v0.37.5
+  Downloaded quick-xml v0.32.0
+  Downloaded nix v0.26.4
+  Downloaded unicode-width v0.1.14
+  Downloaded quinn-proto v0.11.11
+  Downloaded petgraph v0.6.5
+  Downloaded url v2.5.4
+  Downloaded rustix v1.0.7
+  Downloaded rustix v0.38.44
+  Downloaded linux-raw-sys v0.4.15
+  Downloaded rustls v0.23.26
+  Downloaded regex-syntax v0.8.5
+  Downloaded nom v7.1.3
+  Downloaded unicode-width v0.2.0
+  Downloaded linux-raw-sys v0.9.4
+  Downloaded zerovec v0.10.4
+  Downloaded regex-automata v0.4.9
+  Downloaded miniz_oxide v0.8.8
+  Downloaded minimal-lexical v0.2.1
+  Downloaded reqwest v0.12.15
+  Downloaded mmap-rs v0.6.1
+  Downloaded time v0.3.41
+  Downloaded tokio v1.44.2
+  Downloaded html_to_markdown v0.1.0
+  Downloaded syntect v5.2.0
+  Downloaded anndists v0.1.2
+  Downloaded rustls-webpki v0.103.1
+  Downloaded serde_json v1.0.140
+  Downloaded rust-embed v8.7.1
+  Downloaded unicode-ident v1.0.18
+  Downloaded mio v0.8.11
+  Downloaded bm25 v2.2.1
+  Downloaded memchr v2.7.4
+  Downloaded libc v0.2.172
+  Downloaded reedline v0.39.0
+  Downloaded hashbrown v0.14.5
+  Downloaded quinn-udp v0.5.12
+  Downloaded phf_shared v0.11.3
+  Downloaded phf_macros v0.11.3
+  Downloaded phf_codegen v0.11.3
+  Downloaded num-integer v0.1.46
+  Downloaded tower v0.5.2
+  Downloaded rand v0.9.1
+  Downloaded proc-macro2 v1.0.95
+  Downloaded ppv-lite86 v0.2.21
+  Downloaded powerfmt v0.2.0
+  Downloaded pkg-config v0.3.32
+  Downloaded pin-project-lite v0.2.16
+  Downloaded ring v0.17.14
+  Downloaded hnsw_rs v0.3.1
+  Downloaded phf_generator v0.11.3
+  Downloaded percent-encoding v2.3.1
+  Downloaded nu-ansi-term v0.50.1
+  Downloaded newline-converter v0.3.0
+  Downloaded mime_guess v2.0.5
+  Downloaded mime v0.3.17
+  Downloaded markup5ever v0.14.1
+  Downloaded lock_api v0.4.12
+  Downloaded litemap v0.7.5
+  Downloaded indexmap v2.9.0
+  Downloaded icu_collections v1.5.0
+  Downloaded typenum v1.18.0
+  Downloaded serde v1.0.219
+  Downloaded rayon-core v1.12.1
+  Downloaded rand v0.8.5
+  Downloaded pin-utils v0.1.0
+  Downloaded phf v0.11.3
+  Downloaded num-conv v0.1.0
+  Downloaded mac v0.1.1
+  Downloaded itertools v0.13.0
+  Downloaded inquire v0.7.5
+  Downloaded idna v1.0.3
+  Downloaded icu_properties_data v1.5.1
+  Downloaded hyper-util v0.1.11
+  Downloaded rust-stemmers v1.2.0
+  Downloaded hyper v1.6.0
+  Downloaded tracing-core v0.1.33
+  Downloaded tracing v0.1.41
+  Downloaded textwrap v0.16.2
+  Downloaded socket2 v0.5.9
+  Downloaded stop-words v0.8.1
+  Downloaded serde_yaml v0.9.34+deprecated
+  Downloaded serde_derive v1.0.219
+  Downloaded selectors v0.26.0
+  Downloaded ryu v1.0.20
+  Downloaded rustls-pki-types v1.11.0
+  Downloaded quote v1.0.40
+  Downloaded memoffset v0.7.1
+  Downloaded match_token v0.1.0
+  Downloaded markup5ever_rcdom v0.3.0
+  Downloaded markup5ever v0.12.1
+  Downloaded log v0.4.27
+  Downloaded lazy_static v1.5.0
+  Downloaded jsonptr v0.7.1
+  Downloaded itoa v1.0.15
+  Downloaded is_terminal_polyfill v1.70.1
+  Downloaded is-terminal v0.4.16
+  Downloaded ipnet v2.11.0
+  Downloaded idna_adapter v1.2.0
+  Downloaded icu_provider_macros v1.5.0
+  Downloaded icu_provider v1.5.0
+  Downloaded icu_properties v1.5.1
+  Downloaded icu_normalizer_data v1.5.1
+  Downloaded icu_normalizer v1.5.0
+  Downloaded icu_locid_transform_data v1.5.1
+  Downloaded icu_locid_transform v1.5.0
+  Downloaded icu_locid v1.5.0
+  Downloaded iana-time-zone v0.1.63
+  Downloaded hyper-rustls v0.27.5
+  Downloaded humantime v2.2.0
+  Downloaded httpdate v1.0.3
+  Downloaded http v1.3.1
+  Downloaded html5ever v0.29.1
+  Downloaded html5ever v0.27.0
+  Downloaded x11rb-protocol v0.13.1
+  Downloaded onig_sys v69.8.1
+  Downloaded tokio-stream v0.1.17
+  Downloaded tinyvec v1.9.0
+  Downloaded time-macros v0.2.22
+  Downloaded tendril v0.4.3
+  Downloaded tempfile v3.19.1
+  Downloaded subtle v2.6.1
+  Downloaded strum_macros v0.26.4
+  Downloaded smallvec v1.15.0
+  Downloaded signal-hook v0.3.17
+  Downloaded rustls-pemfile v2.2.0
+  Downloaded rustls-native-certs v0.8.1
+  Downloaded rust-embed-impl v8.7.0
+  Downloaded rand_core v0.9.3
+  Downloaded ident_case v1.0.1
+  Downloaded httparse v1.10.1
+  Downloaded hmac v0.12.1
+  Downloaded hashbrown v0.15.3
+  Downloaded zerovec-derive v0.10.3
+  Downloaded zerofrom v0.1.6
+  Downloaded zerocopy v0.8.25
+  Downloaded zerocopy v0.7.35
+  Downloaded yoke-derive v0.7.5
+  Downloaded xml5ever v0.18.1
+  Downloaded x11rb v0.13.1
+  Downloaded webpki-roots v0.26.10
+  Downloaded wayland-protocols v0.32.8
+  Downloaded wayland-client v0.31.10
+  Downloaded vte v0.14.1
+  Downloaded outref v0.5.2
+  Downloaded tree_magic_mini v3.1.6
+  Downloaded tracing-attributes v0.1.28
+  Downloaded tokio-socks v0.5.2
+  Downloaded tokio-rustls v0.26.2
+  Downloaded tokio-macros v2.5.0
+  Downloaded tokio-graceful v0.2.2
+  Downloaded tinystr v0.7.6
+  Downloaded time-core v0.1.4
+  Downloaded thiserror-impl v2.0.12
+  Downloaded thiserror-impl v1.0.69
+  Downloaded thiserror v2.0.12
+  Downloaded thiserror v1.0.69
+  Downloaded termcolor v1.4.1
+  Downloaded sysctl v0.5.5
+  Downloaded sys-locale v0.3.2
+  Downloaded synstructure v0.13.2
+  Downloaded strsim v0.11.1
+  Downloaded strip-ansi-escapes v0.2.1
+  Downloaded string_cache_codegen v0.5.4
+  Downloaded string_cache v0.8.9
+  Downloaded stable_deref_trait v1.2.0
+  Downloaded smawk v0.3.2
+  Downloaded slab v0.4.9
+  Downloaded siphasher v1.0.1
+  Downloaded simplelog v0.12.2
+  Downloaded signal-hook-registry v1.4.5
+  Downloaded signal-hook-mio v0.2.4
+  Downloaded shlex v1.3.0
+  Downloaded shell-words v1.1.0
+  Downloaded sha2 v0.10.9
+  Downloaded servo_arc v0.4.0
+  Downloaded serde_urlencoded v0.7.1
+  Downloaded scraper v0.23.1
+  Downloaded scopeguard v1.2.0
+  Downloaded same-file v1.0.6
+  Downloaded rustversion v1.0.20
+  Downloaded rustc-hash v2.1.1
+  Downloaded rgb v0.8.50
+  Downloaded reqwest-eventsource v0.6.0
+  Downloaded rand_core v0.6.4
+  Downloaded rand_chacha v0.9.0
+  Downloaded rand_chacha v0.3.1
+  Downloaded zeroize v1.8.1
+  Downloaded zerofrom-derive v0.1.6
+  Downloaded yoke v0.7.5
+  Downloaded writeable v0.5.5
+  Downloaded write16 v1.0.0
+  Downloaded wl-clipboard-rs v0.9.2
+  Downloaded which v7.0.3
+  Downloaded web-time v1.1.0
+  Downloaded wayland-sys v0.31.6
+  Downloaded wayland-scanner v0.31.6
+  Downloaded wayland-protocols-wlr v0.3.8
+  Downloaded wayland-backend v0.3.10
+  Downloaded want v0.3.1
+  Downloaded walkdir v2.5.0
+  Downloaded vsimd v0.8.0
+  Downloaded version_check v0.9.5
+  Downloaded uuid v1.16.0
+  Downloaded utf8parse v0.2.2
+  Downloaded utf8_iter v1.0.4
+  Downloaded utf16_iter v1.0.5
+  Downloaded utf-8 v0.7.6
+  Downloaded urlencoding v2.1.3
+  Downloaded path-dedot v3.1.1
+  Downloaded path-absolutize v3.1.1
+  Downloaded parking_lot_core v0.9.10
+  Downloaded parking_lot v0.12.3
+  Downloaded os_pipe v1.2.1
+  Downloaded os_info v3.10.0
+  Downloaded option-ext v0.2.0
+  Downloaded openssl-probe v0.1.6
+  Downloaded onig v6.4.0
+  Downloaded once_cell v1.21.3
+  Downloaded num_threads v0.1.7
+  Downloaded num_cpus v1.16.0
+  Downloaded mio v1.0.3
+  Downloaded try-lock v0.2.5
+  Downloaded tower-service v0.3.3
+  Downloaded tower-layer v0.3.3
+  Downloaded tinyvec_macros v0.1.1
+  Downloaded thread_local v1.1.8
+  Downloaded sync_wrapper v1.0.2
+  Downloaded strum v0.26.3
+  Downloaded rust-embed-utils v8.7.0
+  Downloaded h2 v0.4.10
+  Downloaded futures-util v0.3.31
+  Downloaded deunicode v1.6.2
+  Downloaded clap_builder v4.5.37
+  Downloaded chrono v0.4.41
+  Downloaded heck v0.5.0
+  Downloaded new_debug_unreachable v1.0.6
+  Downloaded flate2 v1.1.1
+  Downloaded fancy-regex v0.14.0
+  Downloaded derive_more v0.99.20
+  Downloaded darling_core v0.20.11
+  Downloaded cssparser v0.34.0
+  Downloaded crossterm v0.28.1
+  Downloaded crossterm v0.25.0
+  Downloaded crossbeam-utils v0.8.21
+  Downloaded crossbeam-epoch v0.9.18
+  Downloaded crc32fast v1.4.2
+  Downloaded combine v4.6.7
+  Downloaded clap v4.5.37
+  Downloaded cfg-if v1.0.0
+  Downloaded cc v1.2.21
+  Downloaded cached v0.55.1
+  Downloaded bytes-utils v0.1.4
+  Downloaded bytes v1.10.1
+  Downloaded bytemuck v1.23.0
+  Downloaded bitflags v2.9.0
+  Downloaded base64 v0.22.1
+  Downloaded aws-smithy-types v1.3.1
+  Downloaded async-trait v0.1.88
+  Downloaded arboard v3.5.0
+  Downloaded anyhow v1.0.98
+  Downloaded aho-corasick v1.1.3
+  Downloaded ahash v0.8.11
+  Downloaded adler2 v2.0.0
+  Downloaded generic-array v0.14.7
+  Downloaded fuzzy-matcher v0.3.7
+  Downloaded futures-timer v3.0.3
+  Downloaded futures-task v0.3.31
+  Downloaded futures-macro v0.3.31
+  Downloaded futures-io v0.3.31
+  Downloaded futures-core v0.3.31
+  Downloaded futures-channel v0.3.31
+  Downloaded futf v0.1.5
+  Downloaded form_urlencoded v1.2.1
+  Downloaded fixedbitset v0.4.2
+  Downloaded filedescriptor v0.8.3
+  Downloaded fd-lock v4.0.4
+  Downloaded fastrand v2.3.0
+  Downloaded errno v0.3.11
+  Downloaded env_logger v0.10.2
+  Downloaded env_home v0.1.0
+  Downloaded enum-as-inner v0.6.1
+  Downloaded either v1.15.0
+  Downloaded ego-tree v0.10.0
+  Downloaded dyn-clone v1.0.19
+  Downloaded dtoa-short v0.3.5
+  Downloaded dtoa v1.0.10
+  Downloaded downcast-rs v1.2.1
+  Downloaded displaydoc v0.2.5
+  Downloaded dirs-sys v0.5.0
+  Downloaded dirs v6.0.0
+  Downloaded digest v0.10.7
+  Downloaded deranged v0.4.0
+  Downloaded darling v0.20.11
+  Downloaded crossbeam-deque v0.8.6
+  Downloaded clap_lex v0.7.4
+  Downloaded clap_derive v4.5.32
+  Downloaded cached_proc_macro v0.24.0
+  Downloaded byteorder v1.5.0
+  Downloaded block-buffer v0.10.4
+  Downloaded bincode v1.3.3
+  Downloaded aws-smithy-eventstream v0.60.8
+  Downloaded autocfg v1.4.0
+  Downloaded atomic-waker v1.1.2
+  Downloaded async-recursion v1.1.1
+  Downloaded anstyle-query v1.1.2
+  Downloaded anstream v0.6.18
+  Downloaded ansi_colours v1.2.3
+  Downloaded allocator-api2 v0.2.21
+  Downloaded futures-sink v0.3.31
+  Downloaded equivalent v1.0.2
+  Downloaded darling_macro v0.20.11
+  Downloaded cssparser-macros v0.6.1
+  Downloaded crypto-common v0.1.6
+  Downloaded cpufeatures v0.2.17
+  Downloaded cpu-time v1.0.0
+  Downloaded colorchoice v1.0.3
+  Downloaded cfg_aliases v0.2.1
+  Downloaded cached_proc_macro_types v0.1.1
+  Downloaded bitflags v1.3.2
+  Downloaded bit-set v0.8.0
+  Downloaded base64-simd v0.8.0
+  Downloaded anstyle v1.0.10
+  Downloaded getrandom v0.3.2
+  Downloaded fnv v1.0.7
+  Downloaded eventsource-stream v0.2.3
+  Downloaded 346 crates (32.1 MB) in 5.20s (largest was `rust-stemmers` at 2.4 MB)
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling libc v0.2.172
+   Compiling serde v1.0.219
+   Compiling cfg-if v1.0.0
+   Compiling autocfg v1.4.0
+   Compiling log v0.4.27
+   Compiling smallvec v1.15.0
+   Compiling memchr v2.7.4
+   Compiling once_cell v1.21.3
+   Compiling quote v1.0.40
+   Compiling itoa v1.0.15
+   Compiling syn v2.0.101
+   Compiling version_check v0.9.5
+   Compiling shlex v1.3.0
+   Compiling bytes v1.10.1
+   Compiling cc v1.2.21
+   Compiling rand_core v0.6.4
+   Compiling siphasher v1.0.1
+   Compiling rand v0.8.5
+   Compiling phf_shared v0.11.3
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.15.3
+   Compiling phf_generator v0.11.3
+   Compiling signal-hook-registry v1.4.5
+   Compiling typenum v1.18.0
+   Compiling pin-project-lite v0.2.16
+   Compiling mio v1.0.3
+   Compiling lock_api v0.4.12
+   Compiling parking_lot_core v0.9.10
+   Compiling generic-array v0.14.7
+   Compiling stable_deref_trait v1.2.0
+   Compiling scopeguard v1.2.0
+   Compiling phf_codegen v0.11.3
+   Compiling futures-core v0.3.31
+   Compiling pkg-config v0.3.32
+   Compiling parking_lot v0.12.3
+   Compiling socket2 v0.5.9
+   Compiling fnv v1.0.7
+   Compiling either v1.15.0
+   Compiling pin-utils v0.1.0
+   Compiling string_cache_codegen v0.5.4
+   Compiling getrandom v0.2.16
+   Compiling slab v0.4.9
+   Compiling synstructure v0.13.2
+   Compiling new_debug_unreachable v1.0.6
+   Compiling ryu v1.0.20
+   Compiling thiserror v1.0.69
+   Compiling rustix v0.38.44
+   Compiling subtle v2.6.1
+   Compiling writeable v0.5.5
+   Compiling precomputed-hash v0.1.1
+   Compiling linux-raw-sys v0.4.15
+   Compiling mac v0.1.1
+   Compiling icu_locid_transform_data v1.5.1
+   Compiling litemap v0.7.5
+   Compiling futf v0.1.5
+   Compiling ring v0.17.14
+   Compiling num-traits v0.2.19
+   Compiling crossbeam-utils v0.8.21
+   Compiling icu_properties_data v1.5.1
+   Compiling serde_json v1.0.140
+   Compiling rustls-pki-types v1.11.0
+   Compiling utf-8 v0.7.6
+   Compiling serde_derive v1.0.219
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.7.5
+   Compiling zerovec-derive v0.10.3
+   Compiling tokio-macros v2.5.0
+   Compiling zerofrom v0.1.6
+   Compiling displaydoc v0.2.5
+   Compiling yoke v0.7.5
+   Compiling zerovec v0.10.4
+   Compiling tokio v1.44.2
+   Compiling phf_macros v0.11.3
+   Compiling tinystr v0.7.6
+   Compiling thiserror-impl v1.0.69
+   Compiling phf v0.11.3
+   Compiling icu_locid v1.5.0
+   Compiling icu_provider_macros v1.5.0
+   Compiling tendril v0.4.3
+   Compiling icu_provider v1.5.0
+   Compiling futures-macro v0.3.31
+   Compiling tracing-attributes v0.1.28
+   Compiling bitflags v2.9.0
+   Compiling indexmap v2.9.0
+   Compiling string_cache v0.8.9
+   Compiling http v1.3.1
+   Compiling wayland-sys v0.31.6
+   Compiling tracing-core v0.1.33
+   Compiling byteorder v1.5.0
+   Compiling rustix v1.0.7
+   Compiling icu_normalizer_data v1.5.1
+   Compiling futures-task v0.3.31
+   Compiling regex-syntax v0.8.5
+   Compiling futures-sink v0.3.31
+   Compiling heck v0.5.0
+   Compiling tokio-util v0.7.15
+   Compiling futures-util v0.3.31
+   Compiling tracing v0.1.41
+   Compiling icu_locid_transform v1.5.0
+   Compiling icu_collections v1.5.0
+   Compiling wayland-backend v0.3.10
+   Compiling aho-corasick v1.1.3
+   Compiling bitflags v1.3.2
+   Compiling httparse v1.10.1
+   Compiling num-conv v0.1.0
+   Compiling signal-hook v0.3.17
+   Compiling time-core v0.1.4
+   Compiling linux-raw-sys v0.9.4
+   Compiling zerocopy v0.8.25
+   Compiling powerfmt v0.2.0
+   Compiling same-file v1.0.6
+   Compiling untrusted v0.9.0
+   Compiling walkdir v2.5.0
+   Compiling regex-automata v0.4.9
+   Compiling deranged v0.4.0
+   Compiling time-macros v0.2.22
+   Compiling icu_properties v1.5.1
+   Compiling crossbeam-epoch v0.9.18
+   Compiling http-body v1.0.1
+   Compiling quick-xml v0.37.5
+   Compiling markup5ever v0.12.1
+   Compiling ahash v0.8.11
+   Compiling rustls v0.23.26
+   Compiling utf16_iter v1.0.5
+   Compiling strsim v0.11.1
+   Compiling wayland-client v0.31.10
+   Compiling num_threads v0.1.7
+   Compiling try-lock v0.2.5
+   Compiling downcast-rs v1.2.1
+   Compiling utf8_iter v1.0.4
+   Compiling write16 v1.0.0
+   Compiling minimal-lexical v0.2.1
+   Compiling ident_case v1.0.1
+   Compiling thiserror v2.0.12
+   Compiling atomic-waker v1.1.2
+   Compiling getrandom v0.3.2
+   Compiling rayon-core v1.12.1
+   Compiling percent-encoding v2.3.1
+   Compiling time v0.3.41
+   Compiling h2 v0.4.10
+   Compiling nom v7.1.3
+   Compiling darling_core v0.20.11
+   Compiling icu_normalizer v1.5.0
+   Compiling want v0.3.1
+   Compiling wayland-scanner v0.31.6
+   Compiling crossbeam-deque v0.8.6
+   Compiling rustls-webpki v0.103.1
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling thiserror-impl v2.0.12
+   Compiling futures-channel v0.3.31
+   Compiling mio v0.8.11
+   Compiling memoffset v0.7.1
+   Compiling zeroize v1.8.1
+   Compiling zerocopy v0.7.35
+   Compiling unicase v2.8.1
+   Compiling httpdate v1.0.3
+   Compiling anyhow v1.0.98
+   Compiling tower-service v0.3.3
+   Compiling hyper v1.6.0
+   Compiling mime_guess v2.0.5
+   Compiling signal-hook-mio v0.2.4
+   Compiling digest v0.10.7
+   Compiling ppv-lite86 v0.2.21
+   Compiling darling_macro v0.20.11
+   Compiling idna_adapter v1.2.0
+   Compiling form_urlencoded v1.2.1
+   Compiling regex v1.11.1
+   Compiling fxhash v0.2.1
+   Compiling html5ever v0.27.0
+   Compiling markup5ever v0.14.1
+   Compiling onig_sys v69.8.1
+   Compiling fixedbitset v0.4.2
+   Compiling allocator-api2 v0.2.21
+   Compiling openssl-probe v0.1.6
+   Compiling cpufeatures v0.2.17
+   Compiling rustversion v1.0.20
+   Compiling base64 v0.22.1
+   Compiling unicode-segmentation v1.12.0
+   Compiling termcolor v1.4.1
+   Compiling utf8parse v0.2.2
+   Compiling dtoa v1.0.10
+   Compiling dtoa-short v0.3.5
+   Compiling anstyle-parse v0.2.6
+   Compiling sha2 v0.10.9
+   Compiling hashbrown v0.14.5
+   Compiling rustls-native-certs v0.8.1
+   Compiling petgraph v0.6.5
+   Compiling rand_chacha v0.3.1
+   Compiling tokio-rustls v0.26.2
+   Compiling darling v0.20.11
+   Compiling idna v1.0.3
+   Compiling wayland-protocols v0.32.8
+   Compiling rayon v1.10.0
+   Compiling stop-words v0.8.1
+   Compiling hyper-util v0.1.11
+   Compiling enum-as-inner v0.6.1
+   Compiling webpki-roots v0.26.10
+   Compiling cssparser-macros v0.6.1
+   Compiling sync_wrapper v1.0.2
+   Compiling selectors v0.26.0
+   Compiling is-terminal v0.4.16
+   Compiling crc32fast v1.4.2
+   Compiling vsimd v0.8.0
+   Compiling humantime v2.2.0
+   Compiling is_terminal_polyfill v1.70.1
+   Compiling adler2 v2.0.0
+   Compiling colorchoice v1.0.3
+   Compiling tower-layer v0.3.3
+   Compiling anstyle-query v1.1.2
+   Compiling mime v0.3.17
+   Compiling outref v0.5.2
+   Compiling anstyle v1.0.10
+   Compiling fastrand v2.3.0
+   Compiling anstream v0.6.18
+   Compiling tempfile v3.19.1
+   Compiling base64-simd v0.8.0
+   Compiling tower v0.5.2
+   Compiling miniz_oxide v0.8.8
+   Compiling env_logger v0.10.2
+   Compiling cssparser v0.34.0
+   Compiling sysctl v0.5.5
+   Compiling hyper-rustls v0.27.5
+   Compiling wayland-protocols-wlr v0.3.8
+   Compiling nix v0.26.4
+   Compiling url v2.5.4
+   Compiling tree_magic_mini v3.1.6
+   Compiling cached_proc_macro v0.24.0
+   Compiling rust-embed-utils v8.7.0
+   Compiling serde_urlencoded v0.7.1
+   Compiling xml5ever v0.18.1
+   Compiling http-body-util v0.1.3
+   Compiling num-integer v0.1.46
+   Compiling tokio-socks v0.5.2
+   Compiling bincode v1.3.3
+   Compiling rustls-pemfile v2.2.0
+   Compiling derive_more v0.99.20
+   Compiling match_token v0.1.0
+   Compiling bytes-utils v0.1.4
+   Compiling servo_arc v0.4.0
+   Compiling os_pipe v1.2.1
+   Compiling num_cpus v1.16.0
+   Compiling cpu-time v1.0.0
+   Compiling combine v4.6.7
+   Compiling vte v0.14.1
+   Compiling quick-xml v0.32.0
+   Compiling thread_local v1.1.8
+   Compiling bit-vec v0.8.0
+   Compiling option-ext v0.2.0
+   Compiling clap_lex v0.7.4
+   Compiling iana-time-zone v0.1.63
+   Compiling cached_proc_macro_types v0.1.1
+   Compiling bytemuck v1.23.0
+   Compiling web-time v1.1.0
+   Compiling ipnet v2.11.0
+   Compiling lazy_static v1.5.0
+   Compiling unicode-width v0.1.14
+   Compiling x11rb-protocol v0.13.1
+   Compiling reqwest v0.12.15
+   Compiling mmap-rs v0.6.1
+   Compiling x11rb v0.13.1
+   Compiling clap_builder v4.5.37
+   Compiling plist v1.7.1
+   Compiling anndists v0.1.2
+   Compiling rgb v0.8.50
+   Compiling cached v0.55.1
+   Compiling chrono v0.4.41
+   Compiling bit-set v0.8.0
+   Compiling dirs-sys v0.5.0
+   Compiling fuzzy-matcher v0.3.7
+   Compiling strip-ansi-escapes v0.2.1
+   Compiling html5ever v0.29.1
+   Compiling wl-clipboard-rs v0.9.2
+   Compiling aws-smithy-types v1.3.1
+   Compiling markup5ever_rcdom v0.3.0
+   Compiling strum_macros v0.26.4
+   Compiling rust-embed-impl v8.7.0
+   Compiling flate2 v1.1.1
+   Compiling onig v6.4.0
+   Compiling newline-converter v0.3.0
+   Compiling crossterm v0.28.1
+   Compiling crossterm v0.25.0
+   Compiling eventsource-stream v0.2.3
+   Compiling fd-lock v4.0.4
+   Compiling jsonptr v0.7.1
+   Compiling clap_derive v4.5.32
+   Compiling rust-stemmers v1.2.0
+   Compiling itertools v0.13.0
+   Compiling path-dedot v3.1.1
+   Compiling env_home v0.1.0
+   Compiling unicode-width v0.2.0
+   Compiling strum v0.26.3
+   Compiling nu-ansi-term v0.50.1
+   Compiling futures-timer v3.0.3
+   Compiling unicode-linebreak v0.1.5
+   Compiling smawk v0.3.2
+   Compiling deunicode v1.6.2
+   Compiling ego-tree v0.10.0
+   Compiling unsafe-libyaml v0.2.11
+   Compiling dyn-clone v1.0.19
+   Compiling scraper v0.23.1
+   Compiling bm25 v2.2.1
+   Compiling inquire v0.7.5
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling textwrap v0.16.2
+   Compiling clap v4.5.37
+   Compiling reedline v0.39.0
+   Compiling reqwest-eventsource v0.6.0
+   Compiling which v7.0.3
+   Compiling path-absolutize v3.1.1
+   Compiling json-patch v4.0.0
+   Compiling syntect v5.2.0
+   Compiling rust-embed v8.7.1
+   Compiling aws-smithy-eventstream v0.60.8
+   Compiling arboard v3.5.0
+   Compiling html_to_markdown v0.1.0
+   Compiling dirs v6.0.0
+   Compiling fancy-regex v0.14.0
+   Compiling ansi_colours v1.2.3
+   Compiling hnsw_rs v0.3.1
+   Compiling simplelog v0.12.2
+   Compiling uuid v1.16.0
+   Compiling hmac v0.12.1
+   Compiling tokio-graceful v0.2.2
+   Compiling tokio-stream v0.1.17
+   Compiling async-trait v0.1.88
+   Compiling async-recursion v1.1.1
+   Compiling os_info v3.10.0
+   Compiling urlencoding v2.1.3
+   Compiling shell-words v1.1.0
+   Compiling sys-locale v0.3.2
+   Compiling aichat v0.29.0
+    Finished `release` profile [optimized] target(s) in 3m 08s
+  Installing /home/codespace/.cargo/bin/aichat
+   Installed package `aichat v0.29.0` (executable `aichat`)
+@werruww ➜ /workspaces/aichat (main) $ export PATH="$PATH:/path/to/aichat"
+@werruww ➜ /workspaces/aichat (main) $ aichat 3*5
+> No config file, create a new one? Yes
+> API Provider (required): gemini
+> API Key (required): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+> Default Model (required): gemini-2.0-flash
+✓ Saved the config file to '/home/codespace/.config/aichat/config.yaml'.
+
+3 * 5 = 15
+@werruww ➜ /workspaces/aichat (main) $ aichat Who is Napoleon Bonaparte?
+Napoleon Bonaparte (1769-1821) was a French military and political leader who rose to prominence during the French Revolution and led several successful campaigns during the Revolutionary Wars. He was Emperor of the French from 1804 to 1814 and again briefly in 1815 during the Hundred Days.
+
+Here's a breakdown of his key aspects:
+
+*   **Military Genius:** He is widely considered one of the greatest military commanders in history. His strategies and tactics revolutionized warfare. He won numerous victories across Europe.
+*   **Political Leader:** He seized power in France through a coup d'état in 1799 and established himself as First Consul. He later crowned himself Emperor.
+*   **Reforms and Legacy:** He implemented significant reforms in France, including:
+    *   The Napoleonic Code (a unified system of law)
+    *   Economic reforms (establishment of the Bank of France)
+    *   Educational reforms
+    *   Infrastructure improvements
+*   **European Domination:** Through conquest and alliances, he controlled much of continental Europe at the height of his power.
+*   **Downfall:** His ambition ultimately led to his downfall. His invasion of Russia in 1812 was a disastrous campaign, and he was eventually defeated by a coalition of European powers. He was exiled to the island of Elba, but he escaped and briefly regained power in 1815 (the Hundred Days). He was finally defeated at the Battle of Waterloo and exiled to the remote island of Saint Helena, where he died in 1821.
+
+In short, Napoleon Bonaparte was a complex and influential figure who left a lasting mark on France and Europe. He was a brilliant military strategist, a powerful political leader, and a reformer whose legacy continues to be debated and studied today.
+@werruww ➜ /workspaces/aichat (main) $ 
