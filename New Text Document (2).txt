@@ -1,0 +1,39 @@
+
+
+
+
+
+
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+
+
+. "$HOME/.cargo/env"
+echo $PATH
+cargo --version
+
+
+cargo install aichat
+
+export PATH="$PATH:/path/to/aichat"
+
+
+
+
+ aichat 3*5
+
+> No config file, create a new one? Yes
+> API Provider (required): gemini
+> API Key (required): XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+> Default Model (required): gemini-2.0-flash
+✓ Saved the config file to '/home/codespace/.config/aichat/config.yaml'.
+
+
+
+aichat Who is Napoleon Bonaparte?
+
+
+
+
+
